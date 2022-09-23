@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boostrap grid</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <style>
+      div.s_row {
+        height: 100px;
+        border: 2px dotted red;
+      }
+      div.s_col1 {
+        height: 100%;
+        border: 2px dotted blue;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- BS works on 12 column grid system 
+    
+    Gutter=> the gap between the colums is called.
+row => horizontal line
+col=> vertical line 
+row => parent
+col=> child     
+ Blocking technique=>
+html element= html tags
+Bootstrap is all about classes 
+if you are working with the BS that time you don't take width bcoz of BS atomatically take sufficient width
+BS col class is the flexible class -->
+
+    <div class="row s_row">
+      <div class="col-1 s_col1 bg-danger">1</div>
+      <div
+        class="col-4 s_col1 bg-success align-middle text-decoration-line-through"
+      >
+        RS10000 ONLY
+      </div>
+      <div class="col s_col1 bg-primary">3</div>
+      <div class="col s_col1">4</div>
+    </div>
+    <div class="row s_row text-center">
+      <div class="col-4 s_col1 bg-warning fw-bold">Onkar Kadam</div>
+      <div class="col-4 s_col1 bg-info text-lowercase fs-2">YOGESH GAIKWAD</div>
+      <div class="col-4 s_col1 bg-dark text-white text-uppercase fs-4 fw-bold">
+        santosh chaugule
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
